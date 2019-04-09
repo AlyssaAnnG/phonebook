@@ -1,0 +1,35 @@
+<!doctype html5>
+<html>
+<head>
+	<title>Phonebook</title>
+</head>
+<body>
+	<h1>Phonebook Application</h1>
+	<h2>Add Entry</h2>
+	First Name:
+	<input type="text" name="addFName" id="addFName">
+	Last Name:
+	<input type="text" name="addLName" id="addLName">
+	Email:
+	<input type="text" name="addEmail" id="addEmail">
+	Phone:
+	<input type="text" name="addNum" id="addNum">
+	<input type="button" value="Add" name="addButton" id="addButton" onclick="addEntry()"/>
+	<h2>Delete Entry</h2>
+	First Name:
+	<input type="text" name="delFName" id="delFName">
+	Last Name:
+	<input type="text" name="delLName" id="delLName">
+	<input type="button" value="Delete" name="delButton" id="delButton" onclick="delEntry()"/>
+	<h2>Search</h2>
+	First Name:
+	<input type="text" name="searchFName" id="searchFName">
+	Last Name:
+	<input type="text" name="searchLName" id="searchLName">
+	<input type="button" value="Search" name="searchButton" id="searchButton" onclick="search()"/>
+	<p id="result"></p>
+	<h2>Contacts</h2>
+	<p id="list"></p>
+	<script src="phonebook.js" onload="display()"></script>
+</body>
+</html>
